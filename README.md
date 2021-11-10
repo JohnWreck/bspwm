@@ -1,1 +1,1 @@
-# bspwm
+# bspwm play
