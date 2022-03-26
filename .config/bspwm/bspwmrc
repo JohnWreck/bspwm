@@ -21,8 +21,11 @@ bspc rule -a Screenkey manage=off
 # exec stuff
 
 $HOME/.config/polybar/launch.sh
-picom  &
+#picom  &
 nitrogen --restore &
 nm-applet &
 cbatticon &
 megasync &
+
+alttab -d 2 -w 1 -fg '#d0d0d0' -bg "#4b4b4b" -frame "#ffaf00" -t 128x125 -i 127x64 -font "xft:Fira Sans Book-9" &
+
