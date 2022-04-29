@@ -147,7 +147,7 @@ super + shift + Return
     kitty -e nnn -d -e
 
 super + o
-    bspc node @/ -R 180 
+    bspc node @/ -R 90 
 
 # Pulse Audio controls
 XF86AudioRaiseVolume
