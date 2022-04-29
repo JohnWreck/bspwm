@@ -85,11 +85,11 @@ super + Tab
 super + grave 
 	bspc desktop -f last
 
-# focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+## focus the older or newer node in the focus history
+#super + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -141,9 +141,13 @@ Print
     flameshot gui
 
 super + e
-    nautilus
+    thunar
+
 super + shift + Return
     kitty -e nnn -d -e
+
+super + o
+    bspc node @/ -R 180 
 
 # Pulse Audio controls
 XF86AudioRaiseVolume
