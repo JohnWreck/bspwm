@@ -26,8 +26,11 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }q
-    bspc node -{c,k}
+#super + {_,shift + }q
+    #bspc node -{c,k}
+
+super + shift + q
+    bspc node -c
 
 # alternate between the tiled and monocle layout
 super + f
@@ -74,8 +77,13 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f next
+#super + {grave,Tab}
+#	bspc {node,desktop} -f next
+super + Tab
+	bspc desktop -f next
+
+super + grave 
+	bspc desktop -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
