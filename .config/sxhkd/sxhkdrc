@@ -103,6 +103,9 @@ super + {_,shift + }{1-9,0}
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
+super + BackSpace
+    bspc node -p south
+
 # preselect the ratio
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
@@ -136,6 +139,11 @@ super + Escape
 
 Print
     flameshot gui
+
+super + e
+    nautilus
+super + shift + Return
+    kitty -e nnn -d -e
 
 # Pulse Audio controls
 XF86AudioRaiseVolume
