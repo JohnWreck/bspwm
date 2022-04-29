@@ -126,7 +126,6 @@ super + {Left,Down,Up,Right}
 super + Escape
 	i3lock --nofork -e -c 141414
 
-
 # Pulse Audio controls
 XF86AudioRaiseVolume
     pactl set-sink-volume @DEFAULT_SINK@ +5%
