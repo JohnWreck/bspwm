@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + @space
@@ -15,9 +15,8 @@ super + shift + @space
     xdg-open "$(find ~ -type f | grep -v '/\.'| rofi -dmenu -i -p "search ")"
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + shift + r
 	pkill -USR1 -x sxhkd
-
 #
 # bspwm hotkeys
 #
@@ -76,7 +75,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+	bspc {node,desktop} -f next
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -123,6 +122,9 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + Escape
+	i3lock --nofork -e -c 141414
 
 
 # Pulse Audio controls
