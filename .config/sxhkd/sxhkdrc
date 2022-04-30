@@ -82,6 +82,9 @@ super + bracket{left,right}
 super + Tab
 	bspc desktop -f next
 
+super + shift + Tab
+    bspc desktop -f prev
+
 super + grave 
 	bspc desktop -f last
 
