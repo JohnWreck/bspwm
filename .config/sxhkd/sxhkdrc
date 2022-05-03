@@ -152,6 +152,9 @@ super + shift + Return
 super + o
     bspc node @/ -R 90 
 
+super + ctrl + shift + s
+    systemctl suspend    
+
 # Pulse Audio controls
 XF86AudioRaiseVolume
     pactl set-sink-volume @DEFAULT_SINK@ +5%
